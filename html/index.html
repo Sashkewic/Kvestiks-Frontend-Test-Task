@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квестикс - сайт квестов</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link href="../sass/styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <nav class="navbar navbar-light">
+            <div class="container">
+                <!-- Лого -->
+                <a class="navbar-brand" href="#">
+                    <img class="navbar-logo" src="../images/logo.png" alt="Логотип сайта">
+                </a>
+
+                <!-- Ссылки в шапке -->
+                <div class="d-flex links">
+                    <a href="#" class="link"><img src="../images/icons/phone_icon.svg" alt="">Контакты</a>
+                    <a href="#" class="link"><img src="../images/icons/user_icon.svg" alt="">Блог</a>
+                    <a href="#" class="link"><img src="../images/icons/book_icon.svg" alt="">Заказы</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Шапка в мобильной версии -->
+    <header class="header-mobile">
+        <nav class="navbar navbar-light">
+            <div class="container justify-content-between">
+                <!-- Кнопка меню -->
+                <button class="btn border-0" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Лого -->
+                <a class="navbar-brand" href="#">
+                    <img class="navbar-logo" src="../images/logo.png" alt="Логотип сайта">
+                </a>
+
+                <!-- Заказы (иконка) -->
+                <a href="#" class="link"><img src="../images/icons/user_icon.svg" alt=""></a>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container mt-4 d-none d-sm-block">
+        <nav style="--bs-breadcrumb-divider: '&#8594';" aria-label="breadcrumb" class="breadcrumb_nav">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active">Главная</li>
+                <li class="breadcrumb-item active" aria-current="page">Каталог</li>
+            </ol>
+        </nav>
+    </div>
+
+    <main class="container">
+        <div class="row justify-content-between p-2">
+            <!-- Первый блок: занимает 70% на больших экранах, 100% на мобильных -->
+            <div class="col-lg-9 col-12 mb-3">
+                <div class="child child-1">
+                    <div class="container p-0 d-flex quest_info_block">
+                        <div class="d-flex flex-column text_block w-50 col-md-12">
+                            <h2 class="quest_name h2">Стрелы Амура, 18+</h2>
+                            <div class="d-flex flex-wrap quest_tags_block">
+                                <button class="btn tag">квест</button>
+                                <button class="btn tag">для 2 человек</button>
+                                <button class="btn tag">для дома</button>
+                                <button class="btn tag">сложность 7/10</button>
+                            </div>
+
+                            <div class="quest_description">
+                                <p>Романтический квест по поиску подарка для второй половинки: мужа, жены, парня или
+                                    девушки. Чтобы собрать 7 стрел бога любви Амура и разыскать подарок, игроку нужно
+                                    выполнить задания
+                                    древних богов.</p>
+                            </div>
+                        </div>
+
+                        <div class="image-container col-md-12 w-50 rounded">
+                            <span class="popular rounded">Самый популярный</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Второй блок: занимает 20% на больших экранах, скрыт на планшете/мобильных экранах-->
+            <div class="col-lg-3 col-12 card_wrapper">
+                <div class="child child-2">
+                    <div class="card border-light">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fs-6">Принимаем к оплате</h5>
+                            <div class="d-flex justify-content-center align-items-center flex-wrap">
+                                <img class="bank_card_image" src="../images/sber.png" alt="">
+                                <img class="bank_card_image" src="../images/mastercard.png" alt="">
+                                <img class="bank_card_image" src="../images/visa.png" alt="">
+                                <img class="bank_card_image" src="../images/mir.png" alt="">
+                            </div>
+                            <p class="card-text text-center fs-6">Я из другой страны - <a href="#"
+                                    style="color: orange;">как
+                                    оплатить?</a></p>
+                            <a href="#" class="btn btn-primary w-100 p-2 buy_quest_btn text-center">Купить квест &nbsp;
+                                &nbsp;
+                                500 &#8381;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <article class="feedback_clients_block">
+            <div class="reviews_text_block">
+                <span class="h2">Отзывы клиентов</span>
+                <span class="reviews_count">182</span>
+            </div>
+
+            <div class="col-lg-9 col-12 mt-3">
+                <div class="scroll-container d-flex flex-row overflow-auto">
+                    <div class="card border-0 flex-shrink-0 mx-2">
+                        <div class="card-body d-flex flex-column p-4">
+                            <p class="feedback_date">14 февраля 2024</p>
+                            <p class="feadback_username m-0 fw-semibold">Константин (12 игроков 36-50 лет)</p>
+                            <div class="rating">
+                                <span class="star text-warning" data-value="1"><i class="bi bi-star-fill"></i></span>
+                                <span class="star text-warning" data-value="2"><i class="bi bi-star-fill"></i></span>
+                                <span class="star text-warning" data-value="3"><i class="bi bi-star-fill"></i></span>
+                                <span class="star text-warning" data-value="4"><i class="bi bi-star-fill"></i></span>
+                                <span class="star text-warning" data-value="5"><i class="bi bi-star-fill"></i></span>
+                            </div>
+                            <h5 class="feedback_title card-title">День святого Валентина</h5>
+                            <p class="feedback_text card-text">Понравилось, что вопросы хоть и объединены одной темой,
+                                были не похожи
+                                друг на друга. Разные страны и эпохи — есть где разгуляться фантазии. И если сначала
+                                мы пытались искать правильные ответы, то по ходу игры стало интереснее и смешнее
+                                запутать других игроков.</p>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 flex-shrink-0 mx-2">
+                        <div class="card-body d-flex flex-column p-4">
+                            <p class="feedback_date">14 февраля 2024</p>
+                            <p class="feadback_username m-0 fw-semibold">Светлана (2 игрока 36 лет)</p>
+                            <div class="rating">
+                                <span class="star text-warning" data-value="1"><i class="bi bi-star-fill"></i></span>
+                                <span class="star text-warning" data-value="2"><i class="bi bi-star-fill"></i></span>
+                                <span class="star text-warning" data-value="3"><i class="bi bi-star-fill"></i></span>
+                                <span class="star text-warning" data-value="4"><i class="bi bi-star-fill"></i></span>
+                                <span class="star text-warning" data-value="5"><i class="bi bi-star-fill"></i></span>
+                            </div>
+                            <h5 class="card-title">День святого Валентина</h5>
+                            <p class="card-text">Понравилось, что вопросы хоть и объединены одной темой, были не похожи
+                                друг на друга. Разные страны и эпохи — есть где разгуляться фантазии. И если сначала
+                                мы пытались искать правильные ответы, то по ходу игры стало интереснее и смешнее
+                                запутать других игроков.</p>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 flex-shrink-0 mx-2">
+                        <div class="card-body d-flex flex-column p-4">
+                            <p class="feedback_date">14 февраля 2024</p>
+                            <p class="feadback_username m-0 fw-semibold">Светлана (2 игрока 36 лет)</p>
+                            <div class="rating">
+                                <span class="star text-warning" data-value="1"><i class="bi bi-star-fill"></i></span>
+                                <span class="star text-warning" data-value="2"><i class="bi bi-star-fill"></i></span>
+                                <span class="star text-warning" data-value="3"><i class="bi bi-star-fill"></i></span>
+                                <span class="star text-warning" data-value="4"><i class="bi bi-star-fill"></i></span>
+                                <span class="star text-warning" data-value="5"><i class="bi bi-star-fill"></i></span>
+                            </div>
+                            <h5 class="card-title">День Рождения</h5>
+                            <p class="card-text">Понравилось, что вопросы хоть и объединены одной темой, были не похожи
+                                друг на друга. Разные страны и эпохи — есть где разгуляться фантазии. И если сначала
+                                мы пытались искать правильные ответы, то по ходу игры стало интереснее и смешнее
+                                запутать других игроков.</p>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 flex-shrink-0 mx-2">
+                        <div class="card-body d-flex flex-column p-4">
+                            <p class="feedback_date">14 февраля 2024</p>
+                            <p class="feadback_username m-0 fw-semibold">Светлана (2 игрока 36 лет)</p>
+                            <div class="rating">
+                                <span class="star text-warning" data-value="1"><i class="bi bi-star-fill"></i></span>
+                                <span class="star text-warning" data-value="2"><i class="bi bi-star-fill"></i></span>
+                                <span class="star text-warning" data-value="3"><i class="bi bi-star-fill"></i></span>
+                                <span class="star text-warning" data-value="4"><i class="bi bi-star-fill"></i></span>
+                                <span class="star text-warning" data-value="5"><i class="bi bi-star-fill"></i></span>
+                            </div>
+                            <h5 class="card-title">День святого Валентина</h5>
+                            <p class="card-text">Понравилось, что вопросы хоть и объединены одной темой, были не похожи
+                                друг на друга. Разные страны и эпохи — есть где разгуляться фантазии. И если сначала
+                                мы пытались искать правильные ответы, то по ходу игры стало интереснее и смешнее
+                                запутать других игроков.</p>
+                        </div>
+                    </div>
+                    <div class="card border-0 flex-shrink-0 mx-2">
+                        <div class="card-body d-flex flex-column p-4">
+                            <p class="feedback_date">14 февраля 2024</p>
+                            <p class="feadback_username m-0 fw-semibold">Светлана (2 игрока 36 лет)</p>
+                            <div class="rating">
+                                <span class="star text-warning" data-value="1"><i class="bi bi-star-fill"></i></span>
+                                <span class="star text-warning" data-value="2"><i class="bi bi-star-fill"></i></span>
+                                <span class="star text-warning" data-value="3"><i class="bi bi-star-fill"></i></span>
+                                <span class="star text-warning" data-value="4"><i class="bi bi-star-fill"></i></span>
+                                <span class="star text-warning" data-value="5"><i class="bi bi-star-fill"></i></span>
+                            </div>
+                            <h5 class="card-title">День святого Валентина</h5>
+                            <p class="card-text">Понравилось, что вопросы хоть и объединены одной темой, были не похожи
+                                друг на друга. Разные страны и эпохи — есть где разгуляться фантазии. И если сначала
+                                мы пытались искать правильные ответы, то по ходу игры стало интереснее и смешнее
+                                запутать других игроков.</p>
+                        </div>
+                    </div>
+                    <div class="card border-0 flex-shrink-0 mx-2">
+                        <div class="card-body d-flex flex-column p-4">
+                            <p class="feedback_date">14 февраля 2024</p>
+                            <p class="feadback_username m-0 fw-semibold">Светлана (2 игрока 36 лет)</p>
+                            <div class="rating">
+                                <span class="star text-warning" data-value="1"><i class="bi bi-star-fill"></i></span>
+                                <span class="star text-warning" data-value="2"><i class="bi bi-star-fill"></i></span>
+                                <span class="star text-warning" data-value="3"><i class="bi bi-star-fill"></i></span>
+                                <span class="star text-warning" data-value="4"><i class="bi bi-star-fill"></i></span>
+                                <span class="star text-warning" data-value="5"><i class="bi bi-star-fill"></i></span>
+                            </div>
+                            <h5 class="card-title">День святого Валентина</h5>
+                            <p class="card-text">Понравилось, что вопросы хоть и объединены одной темой, были не похожи
+                                друг на друга. Разные страны и эпохи — есть где разгуляться фантазии. И если сначала
+                                мы пытались искать правильные ответы, то по ходу игры стало интереснее и смешнее
+                                запутать других игроков.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-9 col-12 d-flex justify-content-center">
+                <a href="#" class="see_all_feedbacks">Смотреть все отзывы</a>
+            </div>
+
+            <div class="buy_quest_mobile_block my-3 p-0 d-block d-sm-none d-flex justify-content-center">
+                <a href="#" class="w-100 buy_quest_btn text-center">Купить квест &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    500 &#8381;</a>
+            </div>
+        </article>
+    </main>
+</body>
+
+</html>
